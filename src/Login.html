@@ -20,14 +20,16 @@
 			
 			<h2>Please Login</h2>
 			
-			<form action="">
+			<form action="main.html">
 				<label for="first">
 					Email:
 				</label>
 				<input type="text"
 					id="first"
 					name="first"
-					placeholder="Use an afacademy email" required>
+					placeholder="Use an afacademy email" 
+					pattern="[cC]\d{2}[a-zA-Z]+\.+[a-zA-Z]+@afacademy.af.edu$"
+					required>
 					
 				<label for="password">
 					Password:
@@ -35,7 +37,9 @@
 				<input type="password"
 					id="password"
 					name="password"
-					placeholder="Enter a password" required>
+					placeholder="Enter a password" 
+					pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+					required>
 				<div class="wrap">
 					<button type="submit"
 						onclick="solve()">
