@@ -89,3 +89,7 @@ img {
 .padding2 {
 	height: 25px;
 }
+
+hr.solid {
+  border-top: 3px solid #bbb;
+}
