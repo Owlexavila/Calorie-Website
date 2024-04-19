@@ -1,60 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
-    <link rel="stylesheet" href="lightMode.css">
-    <title>My Falcon Pal</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<link href="lightMode.css" rel="stylesheet"/>
+<title>My FalconPal</title>
 </head>
+ 
+ 
+	<body class="mainPage">
+<div class="banner">
+<img src="MyFalconPalLogo.png" class="center">
+</div>
+<div class="padding"></div>
+ 
+	    <form name="enterDate">
+<label for="curDate">Enter the date:</label>
+<input type="date" id="curDate" name="curDate"><br>
+</form>
+<div class="wrap">
+<button type="submit"
+			onclick="solve()">
+				Enter
+</button>
+</div>
+
+<div class="main">
+<h1>Date: INSERT DATE</h1>
+<h2>Breakfast</h2>
+<hr class="solid">
+<form action="results.html">
+<label for="breakfast1">Number of Eggs:</label><br>
+<input type="number" id="breakfast1" name="breakfast1" min="0" placeholder="0"><br>
+ 
+				<label for="breakfast2">Pieces of Bacon:</label><br>
+<input type="number" id="breakfast2" name="breakfast2" min="0" placeholder="0"><br>
+ 
+				<label for="breakfast3">Links of Sausage:</label><br>
+<input type="number" id="breakfast3" name="breakfast3" min="0" placeholder="0"><br>			
+
+<h2>Lunch</h2>
+<hr class="solid">
+
+<label for="lunch1">Number of Burgers:</label><br>
+<input type="number" id="lunch1" name="lunch1" min="0" placeholder="0"><br>
+ 
+				<label for="lunch2">Cups of Fries:</label><br>
+<input type="number" id="lunch2" name="lunch2" min="0" placeholder="0"><br>
+ 
+				<label for="lunch3">Cups of Strawberries:</label><br>
+<input type="number" id="lunch3" name="lunch3" min="0" placeholder="0"><br>			
+
+<h2>Dinner</h2>
+<hr class="solid">
 
 
-<body class="mainPage">
-    <h1>My Falcon Pal</h1>
-    <img src="MyFalconPalLogo.png" alt="My Falcon Pal Logo">
+<label for="dinner1">Number of Steaks:</label><br>
+<input type="number" id="dinner1" name="dinner1" min="0" placeholder="0"><br>
+ 
+				<label for="dinner2">Number of Baked Potatoes:</label><br>
+<input type="number" id="dinner2" name="dinner2" min="0" placeholder="0"><br>
+ 
+				<label for="dinner3">Pieces of Shrimp:</label><br>
+<input type="number" id="dinner3" name="dinner3" min="0" placeholder="0"><br>			
 
-    <form name="enterDate">
-        <label for="curDate">Enter the date:</label>
-        <input type="date" id="curDate" name="curDate"><br>
-    </form>
+<h2>Hydration</h2>
+<hr class="solid">
 
-    <h1>Date: *put the value for date here*</h1>
-    <form name="dailyIntake">
-        <p>Breakfast</p>
-        <label for="otherBfast">Other Breakfast Items:</label><br>
-        <input type="text" id="otherBfast" name="otherBfast"><br>
-
-        <input type="checkbox" id="itemOne" name="itemOne" value="itemOne">
-        <label for="itemOne"> Item 1</label><br>
-        <input type="checkbox" id="itemTwo" name="itemTwo" value="itemTwo">
-        <label for="itemTwo"> Item 2</label><br><br>
-
-        <p>Lunch</p>
-        <label for="otherLunch">Other Lunch Items:</label><br>
-        <input type="text" id="otherLunch" name="otherLunch"><br>
-
-        <input type="checkbox" id="itemOne" name="itemOne" value="itemOne">
-        <label for="itemOne"> Item 1</label><br>
-        <input type="checkbox" id="itemTwo" name="itemTwo" value="itemTwo">
-        <label for="itemTwo"> Item 2</label><br><br>
-
-        <p>Dinner</p>
-        <label for="otherDinner">Other Dinner Items:</label><br>
-        <input type="text" id="otherDinner" name="otherDinner"><br>
-
-        <input type="checkbox" id="itemOne" name="itemOne" value="itemOne">
-        <label for="itemOne"> Item 1</label><br>
-        <input type="checkbox" id="itemTwo" name="itemTwo" value="itemTwo">
-        <label for="itemTwo"> Item 2</label><br><br>
-
-
-
-
-        <input type="submit" value="Submit">
-    </form>
-    
-    <p>
-	<a href='Login.html'
-		style="text-decoration: none;">
-		Logout
-	</a>
-    </p>
+<label for="water">Cups of Water:</label><br>
+<input type="number" id="water" name="water" min="0" placeholder="0"><br>
+<div class="wrap">
+<button type="submit"
+						onclick="solve()">
+					Submit
+</button>
+</div>
+</form>
+</div>
+<p>
+<a href='Login.html'
+			style="text-decoration: none;">
+			Logout
+</a>
+</p>
 </body>
 </html>
