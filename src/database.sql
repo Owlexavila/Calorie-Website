@@ -1,6 +1,3 @@
--- Drop foreign key constraint from Item table
-ALTER TABLE "Item"
-DROP CONSTRAINT IF EXISTS "Item_date_fkey";
 
 -- Now drop the tables
 DROP TABLE IF EXISTS "DailyMenu";

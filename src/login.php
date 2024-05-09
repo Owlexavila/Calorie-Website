@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     // Query to check if the user exists
-    $query = "SELECT * FROM Users WHERE email='$email' AND passwords='$password'";
+    $query = "SELECT * FROM public.\"Users\" WHERE email='$email' AND password='$password'";
     $result = pg_query($db, $query);
     $count = pg_num_rows($result);
 

@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<p>Passwords do not match.</p>";
     } else {
         // Check if user with the same email already exists
-        $check_query = "SELECT * FROM Users WHERE email='$email'";
+	$check_query = "SELECT * FROM public.\"Users\" WHERE \"email\"='$email'";
         $check_result = pg_query($db, $check_query);
         $count = pg_num_rows($check_result);
 
@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "<p>User with this email already exists.</p>";
         } else {
             // Insert new user into the database
-            $insert_query = "INSERT INTO Users (email, passwords) VALUES ('$email', '$password')";
+            $insert_query = "INSERT INTO public.\"Users\" (email, password) VALUES ('$email', '$password')";
             $insert_result = pg_query($db, $insert_query);
 
             if ($insert_result) {
