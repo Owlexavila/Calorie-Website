@@ -17,19 +17,17 @@ onclick="window.location.href='userHistory.html'">View My History
 </button>
 
 <div class="padding"></div>
-<form name="enterDate">
+<form name="enterDate" action="main.php" method="post">
 <label for="curDate">Enter the date:</label>
-<input type="date" id="curDate" name="curDate"><br>
-</form>
+<input type="date" id="curDate" name="curDate" required><br>
 <div class="wrap">
-<button type="submit"
-			onclick="solve()">
-				Enter
-</button>
+<button type="submit">Enter</button>
 </div>
+</form>
+
  
 <div class="main">
-<h1>Date: INSERT DATE</h1>
+<h1>Date: <?php echo $date; ?></h1>
 <h2>Breakfast</h2>
 <hr class="solid">
 <form action="results.html">
