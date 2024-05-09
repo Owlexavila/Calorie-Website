@@ -20,7 +20,7 @@
 
 			<h2>Create Account</h2>
 
-			<form action="Login.html"> 
+			<form action="registration.php" method="post">
 				<label for="first">First Name:</label>
 
 				<input type="text" id="first" name="first" pattern="[a-zA-Z\- ]{1,50}"required />
@@ -64,11 +64,15 @@
 
 		</div>
 		<p>Already have an account?
-			<a href='Login.html'
+			<a href='Login.php'
 				style="text-decoration: none;">
 				Login
 			</a>
 		</p>
+		<!-- Display the registration result -->
+		<?php if (isset($_GET['message'])): ?>
+			<p><?php echo $_GET['message']; ?></p>
+		<?php endif; ?>
 	</body>
 
 </html>
