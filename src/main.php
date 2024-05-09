@@ -274,14 +274,29 @@ onclick="window.location.href='userHistory.php'">View My History
 <div class="padding"></div>
 <form name="enterDate" action="main.php" method="post">
 <label for="curDate">Enter the date:</label>
-<input type="date" id="curDate" name="curDate" required><br>
+<input type="date" id="curDate" name="curDate" required>
 <div class="wrap">
 <button type="submit">Enter</button>
 </div>
 </form>
 
+<style>
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type="date"] {
+    margin-bottom: 1px;
+  }
+  
+  form[name="enterDate"] button[type="submit"] {
+    margin-bottom: 70px;
+  }
+</style>
  
-<div class="main">
+<div class="main"> 
 <h1>Date: <?php echo $date; ?></h1>
 <h2>Breakfast</h2>
 <hr class="solid">
