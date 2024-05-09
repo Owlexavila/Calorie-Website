@@ -294,6 +294,9 @@ onclick="window.location.href='userHistory.php'">View My History
   form[name="enterDate"] button[type="submit"] {
     margin-bottom: 70px;
   }
+  .history-button {
+    margin-bottom: -50px; /* Adjust as needed */
+  }
 </style>
  
 <div class="main"> 
