@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link href="lightMode.css" rel="stylesheet"/>
+        <title>My FalconPal</title>
+    </head>
+    <body class="userHistory">
+        <div class="banner">
+            <img src="MyFalconPalLogo.png" class="center">
+        </div>
+        
+        <div class="padding"></div>
+        <div class="main">
+            <h2>User History</h2>
+            <form action="fetchHistory.php" method="post">
+                <label for="historyDate">Select a date:</label>
+                <input type="date" id="historyDate" name="historyDate">
+                <button type="submit">Show History</button>
+            </form>
+            
+            <div id="nutritionDetails">
+                <label for="calories">Total Calories:</label>
+                <p id="calories"></p>
+
+                <label for="protein">Total Protein:</label>
+                <p id="protein"></p>
+
+                <label for="carbohydrates">Total Carbohydrates:</label>
+                <p id="carbohydrates"></p>
+
+                <label for="fat">Total Fat:</label>
+                <p id="fat"></p>
+
+                <label for="water">Water Intake:</label>
+                <p id="water"></p>
+            </div>
+
+        </div>
+    
+        <p>
+            <a href='Login.html' style="text-decoration: none;"> Logout </a>
+        </p>
+    </body>
+</html>
