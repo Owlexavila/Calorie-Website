@@ -12,6 +12,7 @@ $date = '2024-05-06';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST['curDate'])) {
         $date = $_POST['curDate']; // Capture the submitted date
+        $_SESSION['date'] = $_POST['curDate'];
     } else {
         echo "No date entered."; // Optional: Handle the case where no date is entered
     }
@@ -223,7 +224,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		 $totalcarb = ($breakfast1carbs * $break1mult) + ($breakfast2carbs * $break2mult) + ($breakfast3carbs * $break3mult) + ($lunch1carbs * $lunch1mult) + ($lunch2carbs * $lunch2mult) + ($lunch3carbs * $lunch3mult) + ($dinner1carbs * $dinner1mult) + ($dinner2carbs * $dinner2mult) + ($dinner3carbs * $dinner3mult);
 		 $totalwater = $cupsOfWater * 8;
 		 
-		 
+		 $date = $_SESSION['date'];
 		 $check_query = "SELECT * FROM public.\"UserHistory\" WHERE \"email\"='$email' AND date='$date'";
         	 $check_result = pg_query($db, $check_query);
         	 $count = pg_num_rows($check_result);
