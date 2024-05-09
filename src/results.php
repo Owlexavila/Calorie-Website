@@ -41,7 +41,7 @@ $water = $row['totalwater']
 		
 		<div class="padding"></div>
 		<div class="main">
-			<h2><?php echo $email; ?> on <?php echo $date; ?></h2>
+			<h2><?php echo $email; ?> <?php echo $date; ?></h2>
 
 			<label for="calories">Total Calories: <?php echo $cal; ?> </label>
 			<p id="calories"></p>
@@ -65,6 +65,8 @@ $water = $row['totalwater']
     
     		<p>
 		<a href='Login.php' style="text-decoration: none;"> Logout </a>
+		<span style="margin-left: 20px; margin-right: 5px;">&nbsp;</span>
+        	<a href='userHistory.php' style="text-decoration: none;"> User History </a>
     		</p>
 	</body>
 	</html>
