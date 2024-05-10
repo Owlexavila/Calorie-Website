@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $date = $_POST['curDate']; // Capture the submitted date
         $_SESSION['date'] = $_POST['curDate'];
     } else {
-        echo "No date entered."; // Optional: Handle the case where no date is entered
+        echo "No date entered."; 
     }
 }
 
@@ -296,7 +296,7 @@ onclick="window.location.href='userHistory.php'">View My History
     margin-bottom: 70px;
   }
   .history-button {
-    margin-bottom: -50px; /* Adjust as needed */
+    margin-bottom: -50px; 
   }
 </style>
  
