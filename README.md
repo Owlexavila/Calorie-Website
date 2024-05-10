@@ -1,3 +1,3 @@
-# Calorie-Website
+# MyFalconPal
 
 This project aims to provide a solution to a common Cadet problem of not being able to easily track exactly what they are consuming on a given day. The solution would be a website with up to date nutritional information for the daily meals served at “USAFA Mitchell Hall”. A user would login to their account and be able to input how many servings of each meal they had on any given day. The system would then pull nutritional information from a database and add the calories and important macronutrients to produce a combined total calorie and macronutrient count in an easy to read format. The application ensures cadets can align their diets to their fitness and health goals, improving their overall well-being.
